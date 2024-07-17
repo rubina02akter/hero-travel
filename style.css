@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.mulish-font{
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* default styles */
+ * {
+margin: 0;
+}
+
+/* shared styles */
+h3{
+  font-size: 36px;
+  text-align: center;
+  font-weight: 800;
+  line-height: normal;
+}
+.span{
+  color: rgb(255, 84, 0);
+}
+p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+/* navbar styles */
+.nav-container{
+  width: 90%;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-options{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+
+}
+.nav-options p{
+  cursor: pointer;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  width: 280px;
+}
+.logo img{
+  width: 48px;
+  height: 56px;
+  margin-right: 0.5rem;
+}
+/* banner styles */
+.container{
+  background-image: linear-gradient(180deg,rgba(19,19,24,0.8) 0% ,
+   rgba(19,19,24,0) 100%), 
+   url(Images/bg.png);
+  padding: 7rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 6rem ;
+  border-radius: 20px;
+}
+.travel-inputs{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-top: 20px;
+}
+.travel-inputs input ,select ,button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  color: gray;
+}
+.btn-primary{
+ background-color: rgb(255, 84, 0);
+ color: white;
+}
+.explore-container h3{
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+}
+.explore-container p{
+  font-size: small;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.travel-inputs{
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 6rem 6rem 0 6rem;
+  height: 100px;
+  border-radius: 10px; 
+}
+/* our popular tour styles */
+.popular-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 6rem 6rem 0 6rem;
+}
+.text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+.text-content p , .text-content li {
+  text-align: left;
+}
+.text-content button{
+width: 150px;
+height: 40px;
+margin-left: 20px;
+}
+/* your destination */
+.your-destination{
+  margin: 6rem 6rem 0 6rem;
+}
+.row-1{
+  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ margin-right: 1rem;
+  gap: 1rem;
+}
+
+/* responsive */
+@media screen and (max-width: 576px){
+  .nav-container , .nav-options , .travel-inputs{
+    flex-direction: column;
+  }
+  .container{
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+  }
+  .travel-inputs{
+    width: 100%;
+    margin-top: 10px 0 0 0;
+    height: 100px;
+    border-radius: 10px; 
+    
+  }
+}
+
+
+
+
+
